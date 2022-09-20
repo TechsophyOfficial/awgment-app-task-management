@@ -54,8 +54,6 @@ dependencies {
 	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
 	implementation 'io.github.origin-energy:java-snapshot-testing-junit5:3.2.7'
 
-	implementation 'com.opencsv:opencsv:5.6'
-	implementation 'com.google.code.gson:gson:2.9.0'
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'
 
 
