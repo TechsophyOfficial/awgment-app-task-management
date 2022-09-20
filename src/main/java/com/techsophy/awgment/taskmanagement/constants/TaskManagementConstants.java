@@ -41,7 +41,10 @@ public class TaskManagementConstants {
     public static final String AUTHORIZATION="Authorization";
 
 
-
+    public static final String GATEWAY_URL ="${gateway.uri}";
+    public static final String TASK_MANAGMENT_MODELER ="awgment-task-management";
+    public static final String VERSION_1="v1";
+    public static final String TASK_MANAGEMENT_API_VERSION_1="Task Management API v1";
 
 
     public static final String VERSION_V1="/v1";
