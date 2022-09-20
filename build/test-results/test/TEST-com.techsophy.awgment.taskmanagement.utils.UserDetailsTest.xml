@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.techsophy.awgment.taskmanagement.utils.UserDetailsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-20T08:40:33" hostname="shankar-Lap" time="0.012">
+  <properties/>
+  <testcase name="getUserDetailsTest()" classname="com.techsophy.awgment.taskmanagement.utils.UserDetailsTest" time="0.009"/>
+  <testcase name="InvalidInputExceptionTest()" classname="com.techsophy.awgment.taskmanagement.utils.UserDetailsTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

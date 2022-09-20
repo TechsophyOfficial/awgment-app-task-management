@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2022-09-20T08:40:32" hostname="shankar-Lap" time="0.173">
+  <properties/>
+  <testcase name="getTokenFromIssuerTest()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.065"/>
+  <testcase name="getPageRequestWithPageTest()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.002"/>
+  <testcase name="getPageRequestInvalidInputException()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.002"/>
+  <testcase name="getTokenFromContext()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.026"/>
+  <testcase name="getTokenFromContextException()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.005"/>
+  <testcase name="getLoggedInUserIdTest()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.002"/>
+  <testcase name="getSortByTest()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.001"/>
+  <testcase name="getPaginationResponsePayload()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.002"/>
+  <testcase name="getClientRolesTest()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.053"/>
+  <testcase name="getClientRolesTest1()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.004"/>
+  <testcase name="getClientRolesTest2()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.003"/>
+  <testcase name="getIssuerFromContext()" classname="com.techsophy.awgment.taskmanagement.utils.TokenUtilsTest" time="0.001"/>
+  <system-out><![CDATA[2022-09-20 14:10:33.109  INFO 256493 --- [    Test worker] c.t.a.taskmanagement.utils.TokenUtils    : Token verification failed
+2022-09-20 14:10:33.113 ERROR 256493 --- [    Test worker] c.t.a.taskmanagement.utils.TokenUtils    : AwgmentRoles are missing in clientRoles
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

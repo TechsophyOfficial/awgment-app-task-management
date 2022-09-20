@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TaskControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TaskControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.techsophy.awgment.taskmanagement.controller.html">com.techsophy.awgment.taskmanagement.controller</a> &gt; TaskControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.100s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getTaskByIdTest()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">saveTaskTest()</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:10:28.262 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:10:28.272 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:10:28.299 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:10:28.306 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest], using SpringBootContextLoader
+14:10:28.309 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest]: class path resource [com/techsophy/awgment/taskmanagement/controller/TaskControllerTest-context.xml] does not exist
+14:10:28.310 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest]: class path resource [com/techsophy/awgment/taskmanagement/controller/TaskControllerTestContext.groovy] does not exist
+14:10:28.310 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:10:28.310 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:10:28.400 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/shankar/Downloads/awgment-app-task-management/build/classes/java/main/com/techsophy/awgment/taskmanagement/TaskManagementApplication.class]
+14:10:28.401 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.techsophy.awgment.taskmanagement.TaskManagementApplication for test class com.techsophy.awgment.taskmanagement.controller.TaskControllerTest
+14:10:28.461 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.techsophy.awgment.taskmanagement.controller.TaskControllerTest]: using defaults.
+14:10:28.462 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:10:28.472 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3e67f5f2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@fd53053, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4527f70a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@707b1a44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7132a9dc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57435801, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2da66a44, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@527fc8e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@61bfc9bf, org.springframework.test.context.event.EventPublishingTestExecutionListener@2c7106d9, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@329bad59, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@862f408, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@178f268a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@33ecbd6c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c723f2d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@432f521f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d7a9786]
+14:10:28.475 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@24f870ee testClass = TaskControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c441290 testClass = TaskControllerTest, locations = '{}', classes = '{class com.techsophy.awgment.taskmanagement.TaskManagementApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3eabe84a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa09d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6ba30587, [ImportsContextCustomizer@3c78e551 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2ab0702e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@102efc59, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@9412d48c, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@718dbd79, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@6b3f6585, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6e0f5f7f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2022-09-20 14:10:29.508  INFO 256493 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-09-20 14:10:29.593  INFO 256493 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-09-20 14:10:29.593  WARN 256493 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for &quot;http://localhost:8888/awgment-app-task-management/test&quot;: Connection refused; nested exception is java.net.ConnectException: Connection refused
+2022-09-20 14:10:29.600  INFO 256493 --- [    Test worker] c.t.a.t.controller.TaskControllerTest    : The following 1 profile is active: &quot;test&quot;
+2022-09-20 14:10:29.933  INFO 256493 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-20 14:10:30.082  INFO 256493 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 1 MongoDB repository interfaces.
+2022-09-20 14:10:30.406  INFO 256493 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8c26b181-5f87-33ef-b4c7-91fd48deac7b
+2022-09-20 14:10:30.802  INFO 256493 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-09-20 14:10:30.810  INFO 256493 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-20 14:10:30.811  INFO 256493 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-09-20 14:10:30.939  INFO 256493 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-20 14:10:30.940  INFO 256493 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2022-09-20 14:10:31.207  INFO 256493 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-09-20 14:10:31.252  INFO 256493 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2022-09-20 14:10:31.252  INFO 256493 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2022-09-20 14:10:31.253  INFO 256493 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15105223}
+2022-09-20 14:10:31.463  INFO 256493 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e356940, org.springframework.security.web.context.SecurityContextPersistenceFilter@128d397c, org.springframework.security.web.header.HeaderWriterFilter@68c3aa38, org.springframework.security.web.csrf.CsrfFilter@74cf2d5f, org.springframework.security.web.authentication.logout.LogoutFilter@535aa7c7, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@1db565f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55849272, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294ebdae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38991781, org.springframework.security.web.session.SessionManagementFilter@2df24f19, org.springframework.security.web.access.ExceptionTranslationFilter@33d08a24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f4b8027]
+2022-09-20 14:10:32.416  INFO 256493 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2022-09-20 14:10:32.416  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-09-20 14:10:32.417  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-09-20 14:10:32.700  INFO 256493 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 40051 (http) with context path ''
+2022-09-20 14:10:32.734  INFO 256493 --- [    Test worker] c.t.a.t.controller.TaskControllerTest    : Started TaskControllerTest in 3.851 seconds (JVM running for 5.7)
+2022-09-20 14:10:32.749  INFO 256493 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2022-09-20 14:10:32.749  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-09-20 14:10:32.751  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-09-20 14:10:32.827  INFO 256493 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2022-09-20 14:10:32.827  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-09-20 14:10:32.828  INFO 256493 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5</a> at 20-Sep-2022, 2:10:35 pm</p>
+</div>
+</div>
+</body>
+</html>
