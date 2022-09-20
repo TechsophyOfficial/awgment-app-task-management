@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.techsophy.awgment.taskmanagement.config.LocaleConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-20T08:40:28" hostname="shankar-Lap" time="0.13">
-  <properties/>
-  <testcase name="resolveLocaleTest()" classname="com.techsophy.awgment.taskmanagement.config.LocaleConfigTest" time="0.13"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
