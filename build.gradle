@@ -20,8 +20,8 @@ repositories {
 		url = uri('https://nexus.techsophy.com/nexus/repository/maven-public/')
 		allowInsecureProtocol = true
 		credentials {
-			username='techsophy'
-			password='web@987'
+			 username=System.getenv('nexusUser')
+                         password=System.getenv('nexusPassword')
 		}
 		metadataSources {
 			mavenPom()
