@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-management-app
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: task-management-app
+  template:
+    metadata:
+      labels:
+        name: task-management-app
+    spec:
+      containers:
+      - image: tsdevopsteam/platform:task-management-app-$BUILD_NUMBER
+        name: task-management-app
+        envFrom:
+        - configMapRef:
+            name: task-management-env
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: ts-platform
+        
+      
+      
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-management-app
+  namespace: dev
+spec:
+  type: ClusterIP
+  ports: 
+  - port: 8080
+  selector:
+    name: task-management-app
