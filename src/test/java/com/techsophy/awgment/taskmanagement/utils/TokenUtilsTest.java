@@ -22,6 +22,7 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.AccessDeniedException;
@@ -141,7 +142,7 @@ class TokenUtilsTest {
     }
 
     @Test
-    void getClientRolesTest() throws JsonProcessingException {
+    void getClientRolesTest() throws IOException {
         List<String> list = new ArrayList<>();
         list.add("admin");
         list.add("user");
@@ -154,12 +155,14 @@ class TokenUtilsTest {
         when(mockWebClientWrapper.webclientRequest(any(WebClient.class), anyString(), anyString(), eq(null))).thenReturn(response).thenReturn(" ");
         when(this.mockObjectMapper.readValue(anyString(),eq(Map.class))).thenReturn(map);
         when(this.mockObjectMapper.convertValue(any(), eq(List.class))).thenReturn(list);
-        List<String> response1 = tokenUtils.getClientRoles("token");
+        InputStream resource = new ClassPathResource(TOKEN_TXT_PATH).getInputStream();
+        String result = IOUtils.toString(resource, StandardCharsets.UTF_8);
+        List<String> response1 = tokenUtils.getClientRoles(result);
         Assertions.assertNotNull(response1);
         //Assertions.assertThrows(AccessDeniedException.class,()->tokenUtils.getClientRoles("token"));
     }
     @Test
-    void getClientRolesTest1() throws JsonProcessingException {
+    void getClientRolesTest1() throws IOException {
         String abc = "";
         List<String> list = new ArrayList<>();
         list.add("admin");
@@ -171,10 +174,12 @@ class TokenUtilsTest {
         WebClient webClient = WebClient.builder().build();
         when(mockWebClientWrapper.createWebClient(any())).thenReturn(webClient);
         when(mockWebClientWrapper.webclientRequest(any(WebClient.class), anyString(), anyString(), eq(null))).thenReturn(abc);
-        Assertions.assertThrows(AccessDeniedException.class,()->tokenUtils.getClientRoles("token"));
+        InputStream resource = new ClassPathResource(TOKEN_TXT_PATH).getInputStream();
+        String result = IOUtils.toString(resource, StandardCharsets.UTF_8);
+        Assertions.assertThrows(AccessDeniedException.class,()->tokenUtils.getClientRoles(result));
     }
     @Test
-    void getClientRolesTest2() throws JsonProcessingException {
+    void getClientRolesTest2() throws IOException {
         String abc = "";
         List<String> list = new ArrayList<>();
         List<String> list1 = new ArrayList<>();
@@ -189,6 +194,8 @@ class TokenUtilsTest {
         when(mockWebClientWrapper.webclientRequest(any(WebClient.class), anyString(), anyString(), eq(null))).thenReturn(response).thenReturn(" ");
         when(this.mockObjectMapper.readValue(anyString(),eq(Map.class))).thenReturn(map);
         when(this.mockObjectMapper.convertValue(any(), eq(List.class))).thenReturn(list1);
-        tokenUtils.getClientRoles("token");
+        InputStream resource = new ClassPathResource(TOKEN_TXT_PATH).getInputStream();
+        String result = IOUtils.toString(resource, StandardCharsets.UTF_8);
+        tokenUtils.getClientRoles(result);
     }
   }
