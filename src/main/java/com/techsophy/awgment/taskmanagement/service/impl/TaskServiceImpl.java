@@ -53,19 +53,16 @@ public class TaskServiceImpl implements TaskService {
 
             taskDefinition.setCreatedOn(Instant.now());
             taskDefinition.setCreatedById(BigInteger.valueOf(Long.parseLong(loggedInUser.get("id").toString())));
-            taskDefinition.setCreatedByName(loggedInUser.get(USER_DEFINITION_FIRST_NAME) + TaskManagementConstants.SPACE + loggedInUser.get(USER_DEFINITION_LAST_NAME));
         } else {
             TaskDefinition taskDefinitionData = this.taskRepository.findById(Long.valueOf(taskId))
                     .orElseThrow(() -> new NoDataFoundException(TASK_NOT_FOUND_EXCEPTION, globalMessageSource.get(TASK_NOT_FOUND_EXCEPTION, taskId)));
             taskDefinition.setId(taskDefinition.getId());
             taskDefinition.setCreatedOn(taskDefinitionData.getCreatedOn());
             taskDefinition.setCreatedById(taskDefinitionData.getCreatedById());
-            taskDefinition.setCreatedByName(taskDefinitionData.getCreatedByName());
 
         }
         taskDefinition.setUpdatedOn(Instant.now());
         taskDefinition.setUpdatedById(BigInteger.valueOf(Long.parseLong(loggedInUser.get(ID).toString())));
-        taskDefinition.setUpdatedByName(loggedInUser.get(USER_DEFINITION_FIRST_NAME) + SPACE + loggedInUser.get(USER_DEFINITION_LAST_NAME));
         TaskDefinition taskDefinitionResponse = this.taskRepository.save(taskDefinition);
 
         return this.objectMapper.convertValue(taskDefinitionResponse, TaskSchema.class);
@@ -99,7 +96,6 @@ public class TaskServiceImpl implements TaskService {
         });
         taskDefinition.setUpdatedOn(Instant.now());
         taskDefinition.setUpdatedById(BigInteger.valueOf(Long.parseLong(loggedInUser.get(ID).toString())));
-        taskDefinition.setUpdatedByName(loggedInUser.get(USER_DEFINITION_FIRST_NAME) + SPACE + loggedInUser.get(USER_DEFINITION_LAST_NAME));
         TaskDefinition taskDefinitionUpdate  = this.taskRepository.save(taskDefinition);
 
         return objectMapper.convertValue(taskDefinitionUpdate, TaskSchema.class);

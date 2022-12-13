@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.techsophy.awgment.taskmanagement.config.GlobalMessageSource;
 import com.techsophy.awgment.taskmanagement.dto.PaginationResponsePayload;
 import com.techsophy.awgment.taskmanagement.exception.InvalidInputException;
-import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -156,7 +155,6 @@ public class TokenUtils {
         if (page != null && page > 0) {
             if (pageSize == null || pageSize <= 0) {
                 pageSize = this.defaultPageLimit;
-                ;
             }
             int pageNo = page - 1;
             return PageRequest.of(pageNo, pageSize, getSortBy(sortByArray));
@@ -207,7 +205,7 @@ public class TokenUtils {
     public List<String> getClientRoles(String token) {
         List<String> totalList = null;
         var client = webClientWrapper.createWebClient(token);
-        String userInfoResponse = webClientWrapper.webclientRequest(client, keyCloakApi + USER_INFO_URL, GET, null);
+        String userInfoResponse = webClientWrapper.webclientRequest(client, keyCloakApi + getIssuerFromToken(token) +USER_INFO_URL, GET, null);
         if (userInfoResponse.isEmpty()) {
             logger.info(TOKEN_VERIFICATION_FAILED);
             throw new AccessDeniedException(TOKEN_VERIFICATION_FAILED);
